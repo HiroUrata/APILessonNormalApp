@@ -13,9 +13,12 @@
 		546D885C2757A7D200ED00BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D885A2757A7D200ED00BC /* Main.storyboard */; };
 		546D885E2757A7D400ED00BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546D885D2757A7D400ED00BC /* Assets.xcassets */; };
 		546D88612757A7D400ED00BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D885F2757A7D400ED00BC /* LaunchScreen.storyboard */; };
+		CC7048F78DD17D8244C76EE0 /* Pods_APILessonNormalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB7134830DCA8ECE18042E6 /* Pods_APILessonNormalApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1789E4F340B6869FD5C92C10 /* Pods-APILessonNormalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APILessonNormalApp.debug.xcconfig"; path = "Target Support Files/Pods-APILessonNormalApp/Pods-APILessonNormalApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3BB7134830DCA8ECE18042E6 /* Pods_APILessonNormalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APILessonNormalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D88512757A7D200ED00BC /* APILessonNormalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APILessonNormalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D88542757A7D200ED00BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546D88562757A7D200ED00BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		546D885D2757A7D400ED00BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546D88602757A7D400ED00BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546D88622757A7D400ED00BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CC0BBC6E1E360C22C8182A /* Pods-APILessonNormalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APILessonNormalApp.release.xcconfig"; path = "Target Support Files/Pods-APILessonNormalApp/Pods-APILessonNormalApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7048F78DD17D8244C76EE0 /* Pods_APILessonNormalApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				546D88532757A7D200ED00BC /* APILessonNormalApp */,
 				546D88522757A7D200ED00BC /* Products */,
+				613E0BDF53656B28F9B21F98 /* Pods */,
+				A7557DA7AF52244F70411C0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = APILessonNormalApp;
 			sourceTree = "<group>";
 		};
+		613E0BDF53656B28F9B21F98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1789E4F340B6869FD5C92C10 /* Pods-APILessonNormalApp.debug.xcconfig */,
+				95CC0BBC6E1E360C22C8182A /* Pods-APILessonNormalApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7557DA7AF52244F70411C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB7134830DCA8ECE18042E6 /* Pods_APILessonNormalApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546D88652757A7D400ED00BC /* Build configuration list for PBXNativeTarget "APILessonNormalApp" */;
 			buildPhases = (
+				53462D1659D57FE2BA1FAB32 /* [CP] Check Pods Manifest.lock */,
 				546D884D2757A7D200ED00BC /* Sources */,
 				546D884E2757A7D200ED00BC /* Frameworks */,
 				546D884F2757A7D200ED00BC /* Resources */,
+				E1D23128EDEE557E92F56A0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53462D1659D57FE2BA1FAB32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APILessonNormalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D23128EDEE557E92F56A0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APILessonNormalApp/Pods-APILessonNormalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APILessonNormalApp/Pods-APILessonNormalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APILessonNormalApp/Pods-APILessonNormalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		546D884D2757A7D200ED00BC /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		546D88662757A7D400ED00BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1789E4F340B6869FD5C92C10 /* Pods-APILessonNormalApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		546D88672757A7D400ED00BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95CC0BBC6E1E360C22C8182A /* Pods-APILessonNormalApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
